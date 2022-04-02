@@ -3,8 +3,11 @@ public class Client {
         FastRice food = new FastRice();
         System.out.println(food.getPrice());
         System.out.println(food.getDesc());
-        Egg eggFood = new Egg(food);
+        Garnish eggFood = new Egg(food);
+        Garnish baconEggFood = new Bacon(eggFood);
         System.out.println(eggFood.getDesc());
         System.out.println(eggFood.cost());
+        System.out.println(baconEggFood.getDesc());
+        System.out.println(baconEggFood.getPrice());
     }
 }
